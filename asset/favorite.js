@@ -19,7 +19,7 @@ navLinks.forEach(link => {
     }
 })
 
-
+// this is used for favourite character to fav array 
 function favourite(){
     for(let i=0; i<localStorage.length; i++){
         let key = localStorage.key(i);
@@ -40,6 +40,7 @@ if(fav.length == 0){
     alert('to display here add something in favourite');
 }
 
+// this is search button  
 S_button.addEventListener('click', async (event)=>{
     let bool = false;
     let input = search.value;
@@ -131,6 +132,7 @@ document.addEventListener('keypress', async(event)=>{
     }
 })
 
+// search suggestion 
 search.addEventListener('keyup', async(event)=>{
     s_helper.innerHTML = "";
     let input = event.target.value;
@@ -160,6 +162,8 @@ s_helper.addEventListener('click', (event)=>{
 document.addEventListener('click', ()=>{
     s_helper.style.display = "none";
 })
+
+// this is for rendering the favourite card on the display and also for change the favourite
 let check1 = {
     fav : false,
 }

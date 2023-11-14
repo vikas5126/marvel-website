@@ -18,6 +18,7 @@ navLinks.forEach(link => {
     }
 })
 
+// this is for search button 
 S_button.addEventListener('click', async (event)=>{
     let input = search.value;
     console.log('button is clicked')
@@ -97,6 +98,8 @@ document.addEventListener('keypress' , async (event)=>{
         renderfav();
     }
 })
+
+// search suggestion in superhero page 
 search.addEventListener('keyup', async(event)=>{
     s_helper.innerHTML = "";
     let input = event.target.value;
@@ -126,7 +129,7 @@ s_helper.addEventListener('click', (event)=>{
     }
 })
 
-
+// display the all card 
 async function display(){
     const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${publicKey}&hash=${hashval}&limit=100`;
     const response = await fetch(url);

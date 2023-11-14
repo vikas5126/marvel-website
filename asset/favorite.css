@@ -11,6 +11,8 @@ body{
   height: 100vh;
   width: 100vw;
 }
+
+/* nav bar styling */
 #navbar{
   display: flex;
   flex-direction: row;
@@ -118,6 +120,9 @@ body{
   color: gray;
   font-size: 20px;
 }
+
+
+/* body styling  */
 #container{
   display: flex;
   width: 100%;
@@ -135,17 +140,6 @@ body{
   width: 70rem;
   height: 30rem;
   margin-bottom: 2rem;
-}
-footer{
-  background: black;
-  height: 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: white;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
 }
 .scard{
   display: flex;
@@ -166,7 +160,6 @@ footer{
   background-color: white;
   margin-bottom: 2rem;
 }
-
 .scard_tittle{
   color: black;
   text-decoration: underline;
@@ -187,7 +180,6 @@ footer{
   text-align: justify;
   font-weight: 600;
 }
-
 .sheart {
   position: absolute;
   width: 70px;
@@ -195,7 +187,6 @@ footer{
   margin-top: 10px;
   cursor: pointer;
 }
-
 .shright, .shleft {
   position: absolute;
   top: 0;
@@ -206,7 +197,6 @@ footer{
   /* border: 2px solid red; */
   cursor: pointer;
 }
-
 .shleft {
   filter: drop-shadow(2px 4px 6px white);
   left: 42px;
@@ -238,4 +228,17 @@ footer{
   font-size: x-large;
   font-weight: bolder;
   margin-top: 1rem;
+}
+
+/* footer styling  */
+footer{
+  background: black;
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
 }

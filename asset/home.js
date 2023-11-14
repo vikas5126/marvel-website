@@ -18,6 +18,7 @@ navLinks.forEach(link => {
     }
 })
 
+// slider button and functionality 
 let left = document.getElementById('left');
 let right = document.getElementById('right');
 let move = 0;
@@ -55,6 +56,7 @@ left.addEventListener('click', ()=>{
     }
 })
 
+// search button and fetching api 
 S_button.addEventListener('click', async (event)=>{
     let input = search.value;
     console.log('button is clicked')
@@ -163,6 +165,8 @@ s_helper.addEventListener('click', (event)=>{
     }
 })
 
+
+// this for display the slider on reload 
 async function display(){
     const url = `https://gateway.marvel.com:443/v1/public/characters?ts=${timestamp}&apikey=${publicKey}&hash=${hashval}&limit=100`;
     const response = await fetch(url);
@@ -197,6 +201,8 @@ async function display(){
     renderfav();
 }
 
+
+// favourite functionality button 
 let check1 = {
     fav : false,
 }
@@ -239,7 +245,7 @@ container.addEventListener('click', (event)=>{
     }
 })
 
-
+// this is for rendering favourite 
 function renderfav(){
     for(let i=0; i<localStorage.length; i++){
         let key = localStorage.key(i);
